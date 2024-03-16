@@ -21,13 +21,16 @@ want to use an .rpm package to deliver those files. They basically say
 'I want these set of scripts' to go to 'this directory'. This utility
 takes the approach of using those 2 pieces of information as all it needs
 to build the necessary rpm package. 
+
 [Sample]
 
 My sources are located at: 
+
 /var/opt/tgsrpm/SOURCES/finalprojct/script1.sh
 /var/opt/tgsrpm/SOURCES/finalprojct/script2.sh
 
 They need to look like this on the server:
+
 script1.sh     /var/custom/utils/scripts     root:fxuser    755
 script2.sh     /var/custom/utils/scripts     root:fxuser    755
 
