@@ -27,12 +27,14 @@ to build the necessary rpm package.
 My sources are located at: 
 
 /var/opt/tgsrpm/SOURCES/finalprojct/script1.sh
+
 /var/opt/tgsrpm/SOURCES/finalprojct/script2.sh
 
 They need to look like this on the server:
 
-script1.sh     /var/custom/utils/scripts     root:fxuser    755
-script2.sh     /var/custom/utils/scripts     root:fxuser    755
+script1.sh             /var/custom/utils/scripts       root:fxuser      755
+
+script2.sh             /var/custom/utils/scripts       root:fxuser      755
 
 
 Put those 2 pieces of information in the .spec file and it will
